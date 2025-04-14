@@ -1,0 +1,6 @@
+crewai==0.105.0
+crewai-tools==0.38.0
+tqdm==4.67.1
+databricks-sdk>=0.46.0
+pinecone==6.0.2
+openai==1.73.0

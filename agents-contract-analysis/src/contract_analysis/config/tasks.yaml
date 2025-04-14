@@ -1,0 +1,37 @@
+---
+retrieve_contracts_task:
+  description: >
+    Retrieve contracts from the vector database using QdrantVectorSearchTool
+    Focus on extracting the necessary data for specific clauses that need analysis.
+    You need to retreve relevant contracts from the vector database based on the query: {query}
+  expected_output:
+    A dataset containing all relevant contracts with specific clauses
+    extracted, ready for analysis.
+  agent: data_retrieval_analysis_specialist
+
+source_citer_task:
+  description: Your goal is to retrieve the sources of answers for {query}
+  expected_output: >
+    A list of sources that contain the answers for {query}.
+    We will be using the sources identify where the answer came from.
+    Sources are the sections, paragraphs, or other identifiers that contain the answer.
+  agent: source_citer_specialist
+
+conflicts_of_interest_task:
+  description: Your goal is to find any conflicts of interest between the contracts found and sources specified
+  expected_output: A list of conflicts of interest between the contracts found and sources specified. Include the source details of where the conflicts of interest are found.
+  agent: conflicts_of_interest_specialist
+
+generate_report_task:
+  description: >
+    Generate a report detailing findings with sources using the analysis
+    Answer the question: {query}
+    Include the sources for the answer
+    Then include a section for potential conflicts of interest and the sources for the conflicts of interest
+  expected_output:
+    A comprehensive report that includes detailed findings of conflicts,
+    similarities, differences, and sources for the analyzed contract clauses.
+    Include the sources for the answer
+    Then include a section for potential conflicts of interest and the sources for the conflicts of interest
+  agent: report_generation_specialist
+  output_file: report.md

@@ -1,0 +1,6 @@
+.env
+agents-writing-docs/.env
+agents-writing-docs/db
+agents-contract-analysis/.env
+agents-prepare-for-meetings/.env
+agents-prepare-for-meetings/output

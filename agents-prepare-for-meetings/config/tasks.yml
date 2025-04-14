@@ -1,0 +1,160 @@
+research_task:
+  description: >
+    Conduct strategic intelligence gathering on the upcoming meeting about {topic} with {participants}.
+
+    Your objective is to uncover insights that will give our executive a competitive advantage:
+
+    1. Topic analysis:
+       - Core business implications of {topic}
+       - Latest developments and emerging trends (within last 3 months)
+       - Competitive landscape and market position
+       - Industry benchmarks and best practices
+
+    2. Participant intelligence:
+       - Professional background and current role of each participant
+       - Recent statements, publications, or positions on {topic}
+       - Personal communication style and decision-making patterns
+       - Relationships with other participants (alliances, tensions)
+       - Track record in similar negotiations or discussions
+
+    3. Strategic context:
+       - Identify potential hidden agendas or unstated objectives
+       - Map potential areas of alignment and conflict
+       - Highlight political or organizational dynamics at play
+       - Assess timing considerations and external pressures
+
+    Focus on quality over quantity. Prioritize information that directly impacts meeting objectives.
+
+  expected_output: >
+    A comprehensive intelligence report with the following sections:
+
+    1. EXECUTIVE SUMMARY (250 words max): Key findings and strategic implications
+
+    2. TOPIC ANALYSIS (500 words max):
+       - Current state and developments
+       - Strategic importance and business implications
+       - Risk/opportunity assessment
+       - Competitive differentiation points
+
+    3. PARTICIPANT PROFILES (250 words per participant):
+       - Professional summary and relevant expertise
+       - Position on the topic and likely objectives
+       - Communication style and strategic approach
+       - Historical decision patterns and preferences
+
+    4. STRATEGIC CONSIDERATIONS (500 words max):
+       - Potential alliance opportunities
+       - Anticipated objections or concerns
+       - Critical knowledge gaps requiring clarification
+       - Power dynamics and leverage points
+
+    Use bullet points, tables, and visual organization to enhance readability.
+
+
+preparation_task:
+  description: >
+    Create a strategic meeting brief based on the intelligence report for our executive's
+    upcoming meeting on {topic} with {participants}.
+
+    Your objective is to transform the research into an action-oriented brief that:
+    1. Can be reviewed in under 10 minutes
+    2. Provides clear guidance on approach and strategy
+    3. Anticipates scenarios and provides response frameworks
+
+    Your brief should include:
+
+    1. Meeting intelligence:
+       - Strategic objective of the meeting (what we want to achieve)
+       - Key decision-makers and their likely positions
+       - Critical background context executive must know
+       - Competitive intelligence insights
+
+    2. Communication strategy:
+       - 3-5 key talking points aligned with objectives
+       - Tailored messaging for each key participant
+       - Recommended framing for potentially contentious issues
+       - Persuasive narratives and compelling data points
+
+    3. Scenario planning:
+       - Likely questions with concise, effective responses
+       - Potential objections with counter-arguments
+       - Hidden agenda items to be prepared for
+       - Fallback positions and compromise options
+
+    4. Action framework:
+       - Proposed meeting flow and key moments
+       - Decision triggers and fallback positions
+       - Specific follow-up commitments to propose
+       - Success metrics and outcome evaluation criteria
+
+  expected_output: >
+    A strategic meeting brief document with these components:
+
+    1. ONE-PAGER OVERVIEW:
+       - Meeting objective and success criteria
+       - Critical background in 3-5 bullet points
+       - Top 3 recommended strategies or approaches
+       - Key risks and mitigation tactics
+
+    2. PARTICIPANT STRATEGY (one section per participant):
+       - Key interests and potential positions
+       - Tailored messaging approach
+       - Specific points of leverage or concern
+       - Relationship-building opportunities
+
+    3. TALKING POINTS AND RESPONSES:
+       - Prioritized talking points with supporting data
+       - Anticipated questions with concise responses
+       - Objection handling frameworks
+       - Strategic silence recommendations
+
+    4. EXECUTION PLAN:
+       - Recommended meeting flow
+       - Critical decision points
+       - Proposed next steps and commitments
+       - Follow-up strategy and timeline
+
+    Format must be highly scannable with visual hierarchy, using headers,
+    bullet points, tables, and highlighting for key elements.
+
+
+historical_context_task:
+  description: >
+    Search and analyze previous meeting records and interactions related to {topic} and {participants}.
+
+    Your objective is to extract valuable historical context that can inform our current meeting strategy:
+
+    1. Previous interactions:
+       - Key discussion points from past meetings
+       - Commitments made and their fulfillment status
+       - Evolution of positions and relationships over time
+
+    2. Pattern recognition:
+       - Recurring concerns or objections
+       - Communication preferences and effective approaches
+       - Decision-making patterns and influencing factors
+
+    3. Outcome analysis:
+       - Success factors from previous positive interactions
+       - Pitfalls or mistakes to avoid from past experiences
+       - Unresolved issues requiring follow-up
+
+  expected_output: >
+    A concise historical context report with these sections:
+
+    1. INTERACTION TIMELINE (300 words max):
+       - Chronological summary of relevant past meetings
+       - Key milestones and turning points in the relationship
+       - Evolution of the discussion on {topic}
+
+    2. PATTERN INSIGHTS (300 words max):
+       - Identified communication preferences and styles
+       - Recurring themes and concerns
+       - Effective and ineffective strategies used previously
+
+    3. STRATEGIC RECOMMENDATIONS (300 words max):
+       - Specific approaches validated by historical success
+       - Potential pitfalls based on past experiences
+       - Continuity elements to maintain relationship momentum
+
+    Format with clear headings, bullet points, and highlighted key insights for quick reference.

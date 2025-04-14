@@ -1,0 +1,24 @@
+[project]
+name = "contract_analysis"
+version = "0.1.0"
+description = "contract_analysis using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.102.0,<1.0.0",
+    "markitdown[all]~=0.1.0a1",
+    "openai>=1.60.0",
+    "qdrant-client>=1.13.2",
+    "scikit-learn>=1.6.1",
+]
+
+[project.scripts]
+contract_analysis = "contract_analysis.main:run"
+run_crew = "contract_analysis.main:run"
+train = "contract_analysis.main:train"
+replay = "contract_analysis.main:replay"
+test = "contract_analysis.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

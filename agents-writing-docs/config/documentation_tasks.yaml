@@ -1,0 +1,100 @@
+draft_documentation:
+  description:
+   Write the section "{section}" of the documentation for "{title}", for the codebase at {repo_path}.
+   The main goal is {goal}. Using only verified information from the codebase
+   analysis. Ignore images, videos, and other media files.
+
+   Description of the project
+
+   {project_overview}
+
+
+   Project Organization
+
+   {project_organization}
+
+
+   Additional information
+
+   {additional_information}
+
+
+   High level documentation description for {title}
+   {description}
+
+
+   Prerequisites
+   {prerequisites}
+
+
+   Associated entities
+   {associated_entities}
+
+
+   Examples
+   {examples}
+
+
+   Documentation so far
+   {documentation}
+
+
+
+   Ignore Images, Videos, and other media files.
+
+  expected_output: >
+    A factual Markdown section of the documentation that includes only
+    verified information about "{section}" of "{title}".
+
+    Don't wrap the documentation in fences or meta-commentary.
+
+    The documentation section must include things like (if applicable):
+      - Thoughtful explanations with code references
+      - Code examples from the actual codebase
+      - Setup instructions verified against the code
+
+qa_review_documentation:
+  description:
+    Review and validate the draft documentation section "{section}" for "{title}"
+    against the actual codebase at {repo_path}.
+    Also make sure to check existing documentation files for consistency and
+    accuracy.
+    Ignore images, videos, and other media files.
+
+    1. Technical Accuracy
+       - Verify all architectural descriptions match implementation
+       - Validate component relationships and interactions
+       - Cross-reference code examples with tests and actual usage
+       - Confirm mermaid diagrams reflect real data/control flows
+
+    2. Documentation Completeness
+       - Verify coverage of key components
+       - Check all documented workflows exist in code
+       - Ensure integration patterns match implementation
+       - Confirm troubleshooting scenarios are accurate
+
+    3. Documentation Quality
+       - Remove any speculative or unimplemented features
+       - Update examples to match current code patterns
+       - Ensure mermaid diagrams enhance understanding
+
+    4. Technical Consistency
+       - Align terminology with codebase conventions
+       - Verify component names match implementation
+       - Validate code style in examples
+
+    5. Diagram Validation
+       - Validate that all diagram components exist in codebase
+       - Check that flow directions accurately represent system behavior
+       - Mermaid blocks should be wrapped in ```mermaid```
+  expected_output: >
+    A thoroughly validated markdown documentation section for "{section}" of
+    "{title}" that (if applicable):
+      - Is 100% aligned with the implementation at {repo_path}
+      - Contains only verified code examples and workflows
+      - Has correct mermaid diagrams representing actual system flows
+      - Maintains consistent technical terminology
+      - Don't wrap the documentation in fences or meta-commentary.
+      - Ignore Images, Videos, and other media files.
+
+    The output should be pure markdown without fences or meta-commentary.
