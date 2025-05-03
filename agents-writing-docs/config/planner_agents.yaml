@@ -10,7 +10,7 @@ code_explorer:
     components and identifying critical patterns and relationships.
   verbose: false
   max_iter: 5
-  llm: nvidia_nim/meta/llama-3.3-70b-instruct
+  llm: groq/llama-3.3-70b-versatile
 
 documentation_planner:
   role: >
@@ -24,4 +24,4 @@ documentation_planner:
     developers and end-users effectively.
   verbose: false
   max_iter: 5
-  llm: nvidia_nim/meta/llama-3.3-70b-instruct
+  llm: groq/llama-3.3-70b-versatile

@@ -4,3 +4,6 @@ agents-writing-docs/db
 agents-contract-analysis/.env
 agents-prepare-for-meetings/.env
 agents-prepare-for-meetings/output
+agents-writing-docs/workdir/*
+!agents-writing-docs/workdir/repo_will_go_here.txt
+.DS_Store

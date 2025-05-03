@@ -12,7 +12,7 @@ overview_writer:
     technical accuracy. You focus on helping readers understand the big picture
     before diving into details.
   verbose: false
-  llm: nvidia_nim/meta/llama-3.3-70b-instruct
+  llm: groq/llama-3.3-70b-versatile
 
 documentation_reviewer:
   role: >
@@ -28,4 +28,4 @@ documentation_reviewer:
     documentation aligns with the codebase and follows consistent style and
     formatting throughout the project.
   verbose: false
-  llm: nvidia_nim/meta/llama-3.3-70b-instruct
+  llm: groq/llama-3.3-70b-versatile

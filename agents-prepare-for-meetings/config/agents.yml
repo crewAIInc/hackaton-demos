@@ -13,6 +13,7 @@ researcher:
     foundation of successful meetings and take pride in your ability to provide executives
     with insights that give them a strategic advantage. You're known for your attention to
     detail and ability to distinguish between essential information and noise.
+  llm: groq/llama-3.3-70b-versatile
 
 analyst:
   role: >
@@ -31,3 +32,4 @@ analyst:
     emphasize clarity and actionability over volume. You've developed a reputation
     for creating briefs that executives can quickly absorb and confidently act upon,
     even in high-pressure situations.
+  llm: groq/llama-3.3-70b-versatile
