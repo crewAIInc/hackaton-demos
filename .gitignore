@@ -7,3 +7,5 @@ agents-prepare-for-meetings/output
 agents-writing-docs/workdir/*
 !agents-writing-docs/workdir/repo_will_go_here.txt
 .DS_Store
+agents-writing-docs/docs/*
+!agents-writing-docs/docs/docs_will_go_here.txt

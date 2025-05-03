@@ -28,4 +28,4 @@ documentation_reviewer:
     documentation aligns with the codebase and follows consistent style and
     formatting throughout the project.
   verbose: false
-  llm: groq/llama-3.3-70b-versatile
+  llm: gpt-4o
